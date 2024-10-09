@@ -157,29 +157,34 @@ const eyeColor = {
 */
 console.log('Exercise:', exercise++)
 
+// for (let counter = 0; counter < starWarsCharacters.length; counter++) {
+//   const character = starWarsCharacters[counter]
+//   switch (character.eye_color) {
+//     case 'blue':
+//       eyeColor.blue.push(character)
+//       break
+//     case 'yellow':
+//       eyeColor.yellow.push(character)
+//       break
+//     case 'red':
+//       eyeColor.red.push(character)
+//       break
+//     case 'brown':
+//       eyeColor.brown.push(character)
+//       break
+//     case 'blue-gray':
+//       eyeColor['blue-gray'].push(character)
+//       break
+//     default:
+//       break
+//   }
+// }
+
 for (let counter = 0; counter < starWarsCharacters.length; counter++) {
   const character = starWarsCharacters[counter]
-  switch (character.eye_color) {
-    case 'blue':
-      eyeColor.blue.push(character)
-      break
-    case 'yellow':
-      eyeColor.yellow.push(character)
-      break
-    case 'red':
-      eyeColor.red.push(character)
-      break
-    case 'brown':
-      eyeColor.brown.push(character)
-      break
-    case 'blue-gray':
-      eyeColor['blue-gray'].push(character)
-      break
-    default:
-      break
-  }
+  let key = character.eye_color
+  eyeColor[key].push(character)
 }
-
 console.log(eyeColor)
 
 /* ESERCIZIO 6
