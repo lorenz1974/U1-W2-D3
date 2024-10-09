@@ -101,6 +101,7 @@ const starWarsCharacters = [
   },
 ]
 
+// Variabile per la stampa del numero dell'esercizio
 let exercise = 1
 /* ESERCIZIO 1
   Crea una variabile chiamata "charactersNames" e assegnale un array vuoto
@@ -115,9 +116,11 @@ const charactersNames = []
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 console.log('Exercise:', exercise++)
+
 for (let counter = 0; counter < starWarsCharacters.length; counter++) {
   charactersNames.push(starWarsCharacters[counter].name)
 }
+
 console.log(charactersNames)
 
 /* ESERCIZIO 3
@@ -131,6 +134,7 @@ for (let counter = 0; counter < starWarsCharacters.length; counter++) {
     femaleCharacters.push(starWarsCharacters[counter])
   }
 }
+
 console.log(femaleCharacters)
 
 /* ESERCIZIO 4
@@ -138,6 +142,7 @@ console.log(femaleCharacters)
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
 console.log('Exercise:', exercise++)
+
 const eyeColor = {
   blue: [],
   yellow: [],
@@ -234,6 +239,7 @@ console.log(starWarsCharacters)
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 console.log('Exercise:', exercise++)
+
 let index9 = 0
 console.log('Length before removal:', charactersNames.length)
 for (let i = 0; i < femaleCharacters.length; i++) {
